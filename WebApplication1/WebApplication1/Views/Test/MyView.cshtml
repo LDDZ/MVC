@@ -1,0 +1,25 @@
+﻿@using WebApplication1.ViewModels;
+@model PhoneViewModel
+@{
+    Layout = null;
+    //PhoneInfo pi = (PhoneInfo)ViewData["PhoneInfo"];
+    //PhoneInfo pi = ViewBag.piKey;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <div>
+        <h1>@Model.UserName,@Model.Greeting</h1><hr />
+        <h2>手机信息</h2>
+        <p>手机名：@Model.PhoneName</p>
+        <p>价格：@Model.PhonePrice</p>
+        <p>级别：@Model.Rank</p>
+    </div>
+</body>
+</html>
