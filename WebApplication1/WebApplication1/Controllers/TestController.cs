@@ -12,47 +12,64 @@ namespace WebApplication1.Controllers
     {
         public string GetString()
         {
-            return "hello world! MVC";
+            return "hello world! MVC!";
         }
-        public Phone GetPhoneInfo()
-        {
-            Phone phone = new Phone();
-            phone.PhoneName = "MIX 2s";
-            phone.PhonePrice = "2799";
-            return phone;
-        }
-        public ActionResult GetView()
-        {
-            string greeting;
-            int  h = 0;
 
-            h=DateTime.Now.Hour;
-            if (h < 12)
+        public Customer getCustomer()
+        {
+            Customer ct = new Customer();
+            ct.CustomerName = "abc";
+            ct.Address = "def";
+            return ct;           
+        }
+
+        public ActionResult GetView() {
+
+
+
+            //ViewData["greeting"] = greeting;
+            Employee emp = new Employee();
+            emp.Name = "李四";
+            emp.Salary = 20002;
+
+            EmployeeViewModel vmEmp = new EmployeeViewModel();
+
+            vmEmp.EmployeeName = emp.Name;
+            vmEmp.EmployeeSalary = emp.Salary.ToString("C");
+
+            if (emp.Salary > 1000)
             {
-                greeting = "上午好";
+                vmEmp.EmployeeGrade = "土豪";
+            }
+            else {
+                vmEmp.EmployeeGrade = "屌丝";
+            }
+
+            string greeting;
+            //获取当前时间
+            DateTime dt = DateTime.Now;
+            //获取当前小时数
+            int hour = dt.Hour;
+            //根据小时数判断需要返回哪个视图，<12 返回myview 否则返回 yourview
+            if (hour < 12)
+            {
+                greeting = "早上好";
             }
             else
             {
-                 greeting = "下午好";
+                greeting = "下午好";
             }
-            //ViewData["greeting"] = greeting;
-            ViewBag.greeting = greeting;
-            PhoneInfo pi = new PhoneInfo();
-            pi.PhoneName = "iPhone";
-            pi.PhonePrice = 7999;
-            // ViewData["PhoneInfo"] = pi;
-            ViewBag.piKey = pi;
+            //vmEmp.Greeting = greeting;
 
 
-            PhoneViewModel vmP = new PhoneViewModel();
-            vmP.PhoneName = pi.PhoneName;
-            vmP.PhonePrice = pi.PhonePrice.ToString("C");
-            if (pi.PhonePrice > 2299) vmP.Rank = "旗舰机";
-            else vmP.Rank = "经济机";
-            vmP.Greeting = greeting;
-            vmP.UserName = "超级管理员";
+            //vmEmp.UserName = "超级管理员";
 
-            return View("MyView", vmP);
+            //ViewData["EmpKey"] = emp;
+            //ViewBag.EmpKey = emp;
+            return View("MyView",vmEmp);
+
         }
+
+
     }
 }
