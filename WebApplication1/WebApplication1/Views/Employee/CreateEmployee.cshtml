@@ -1,4 +1,4 @@
-﻿
+﻿@*@model WebApplication1.Models.Customer*@
 @{
     Layout = null;
 }
@@ -13,7 +13,7 @@
 <body>
     <div> 
         <form action="/employee/CreateEmployee" method="post">
-            姓名：<input type="text" name="Name">
+            @*@Html.DisplayNameFor(model=>model.Name)*@ <input type="text" name="Name">
             工资：<input type="text" name="Salary">
             <input type="submit" value="保存"><input type="reset" value="重置">
         </form>

@@ -1,6 +1,6 @@
 ﻿@model WebApplication1.ViewModels.EmployeeListViewModel
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/MyLayout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <h2>@Model.UserName,@Model.Greeting</h2>
-    <p><a href="/employee/CreateEmployee">新增</a></p>
+    <p>@Html.ActionLink("新增", "CreateEmployee")</p>
     <form action="/employee/QueryEmployeeForName" method="post">
         根据名称查询：<input type="text" name="queryString">
         <input type="submit" value="查询"><input type="reset" value="重置">
@@ -24,7 +24,7 @@
         <ul>
             @foreach (var item in Model.EmployeeViewList)
             {
-                <li>@item.EmployeeName,@item.EmployeeSalary,@item.EmployeeGrade <a href="/employee/delete/@item.EmployeeId">删除</a> <a href="/employee/UpdateEmployee/@item.EmployeeId">修改</a></li>
+                <li>@item.EmployeeName,@item.EmployeeSalary,@item.EmployeeGrade @Html.ActionLink("删除", "delete", new { id = item.EmployeeId }) @Html.ActionLink("修改", "UpdateEmployee", new { id = item.EmployeeId }) </li>
             }
         </ul>
     </div>
