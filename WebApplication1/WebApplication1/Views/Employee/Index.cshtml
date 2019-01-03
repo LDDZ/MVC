@@ -24,12 +24,15 @@
         <ul>
             @foreach (var item in Model.EmployeeViewList)
             {
-                <li>@item.EmployeeName,@item.EmployeeSalary,@item.EmployeeGrade @Html.ActionLink("删除", "delete", new { id = item.EmployeeId }) @Html.ActionLink("修改", "UpdateEmployee", new { id = item.EmployeeId }) </li>
+                <li>@Html.DisplayNameFor(Model => item.EmployeeName): @item.EmployeeName,@Html.DisplayNameFor(Model => item.EmployeeSalary): @item.EmployeeSalary,
+            @Html.DisplayNameFor(Model => item.EmployeeGrade): @item.EmployeeGrade @Html.ActionLink("删除", "delete", new { id = item.EmployeeId }) @Html.ActionLink("修改", "UpdateEmployee", new { id = item.EmployeeId }) </li>
             }
         </ul>
     </div>
     
-    <div>
+    <di	
+When Harry Met Sally	1989/1/11	Romantic Comedy	¥7.99	PG	Edit | Details | Delete
+Ghostbustersv>
     </div>
 </body>
 </html>

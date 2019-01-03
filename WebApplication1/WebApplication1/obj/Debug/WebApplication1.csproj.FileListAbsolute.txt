@@ -125,6 +125,5 @@ D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\bin\zh-Hans\Syste
 D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 D:\13林杰\MyWebProject\45MVC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
