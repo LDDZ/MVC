@@ -13,7 +13,7 @@ namespace ContosoUniversity.Models
 
         [Display(Name = "注册日期")]
         public DateTime EnrollmentDate { get; set; }
-
+        
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

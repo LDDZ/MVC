@@ -1,10 +1,12 @@
-﻿@model IEnumerable<ContosoUniversity.Models.Student>
+﻿@model PagedList.IPagedList<ContosoUniversity.Models.Student>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Students";
 }
 
-<h2>Index</h2>
+<h2>Students</h2>
 
 <p>
     @Html.ActionLink("新增", "Create")
@@ -12,10 +14,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.EnrollmentDate)
+            @Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th></th>
     </tr>
@@ -30,10 +32,15 @@
         </td>
         <td>
             @Html.ActionLink("编辑", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("细节", "Details", new { id=item.ID }) |
+            @Html.ActionLink("详情", "Details", new { id=item.ID }) |
             @Html.ActionLink("删除", "Delete", new { id=item.ID })
         </td>
     </tr>
 }
 
 </table>
+<br />
+第 @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) 页.共 @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

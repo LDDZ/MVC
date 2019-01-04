@@ -61,3 +61,8 @@ D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\S
 D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\PagedList.dll
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.dll
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\PagedList.xml
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
