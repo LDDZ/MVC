@@ -11,13 +11,20 @@
 <p>
     @Html.ActionLink("新增", "Create")
 </p>
+@using (Html.BeginForm())
+{
+    <p>
+        根据姓名查找: @Html.TextBox("SearchString")
+        <input type="submit" value="搜索" />
+    </p>
+}
 <table class="table">
     <tr>
         <th>
-            @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("姓名", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            @Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("注册日期", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th></th>
     </tr>
@@ -40,7 +47,7 @@
 
 </table>
 <br />
-第 @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) 页.共 @Model.PageCount
+第 @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) 页.共 @Model.PageCount 页
 
 @Html.PagedListPager(Model, page => Url.Action("Index",
     new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
