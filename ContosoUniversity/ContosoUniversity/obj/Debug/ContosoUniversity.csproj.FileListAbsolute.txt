@@ -131,8 +131,12 @@ F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\S
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\System.Web.WebPages.resources.dll
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
 D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
 D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.Cache
+F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
+F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.Cache
+F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.twoUpdate.resources
+F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.threeUpdate.resources
+F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.user.resources
