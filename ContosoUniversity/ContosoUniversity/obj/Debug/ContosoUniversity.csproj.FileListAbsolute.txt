@@ -140,3 +140,4 @@ F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\Con
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.twoUpdate.resources
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.threeUpdate.resources
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.user.resources
+F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
