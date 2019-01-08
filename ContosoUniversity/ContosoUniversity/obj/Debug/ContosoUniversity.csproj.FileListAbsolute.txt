@@ -134,3 +134,5 @@ F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\bin\zh-Hans\S
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 F:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
+D:\13林杰\MyWebProject\45MVC\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.Cache
