@@ -1,0 +1,24 @@
+﻿@model List<MvcMusicStore.Models.Music> 
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="content">
+    <div class="content-music">
+        @*<p class="content-title">@Model.Genre.GenreName</p>*@
+        <table class="table">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(@Html.DisplayFor(modelItem => item.MusicNmae).ToString(), "play", new { id = item.MusicID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+
+</div>

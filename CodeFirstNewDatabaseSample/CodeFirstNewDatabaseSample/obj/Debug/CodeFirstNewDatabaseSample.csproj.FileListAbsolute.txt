@@ -54,3 +54,6 @@ D:/13林杰/MyWebProject/45MVC/CodeFirstNewDatabaseSample/CodeFirstNewDatabaseSa
 /Volumes/林杰/13林杰/MyWebProject/45MVC/CodeFirstNewDatabaseSample/CodeFirstNewDatabaseSample/bin/Debug/EntityFramework.xml
 /Volumes/林杰/13林杰/MyWebProject/45MVC/CodeFirstNewDatabaseSample/CodeFirstNewDatabaseSample/bin/Debug/EntityFramework.SqlServer.xml
 /Volumes/林杰/13林杰/MyWebProject/45MVC/CodeFirstNewDatabaseSample/CodeFirstNewDatabaseSample/obj/Debug/CodeFirstNewDatabaseSample.csproj.CopyComplete
+F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\CodeFirstNewDatabaseSample.exe.config
+F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.exe
+F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.pdb

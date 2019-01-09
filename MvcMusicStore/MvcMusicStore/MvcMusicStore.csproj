@@ -156,6 +156,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthenticationController.cs" />
+    <Compile Include="Controllers\GenreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MusicController.cs" />
     <Compile Include="DAL\MusicContext.cs" />
@@ -166,6 +168,7 @@
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Info.cs" />
     <Compile Include="Models\Music.cs" />
+    <Compile Include="Models\UserDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +217,10 @@
     <Content Include="Views\Music\Edit.cshtml" />
     <Content Include="Views\Music\Index.cshtml" />
     <Content Include="Views\Home\Play.cshtml" />
+    <Content Include="Views\Home\Genre.cshtml" />
+    <Content Include="Views\Genre\Index.cshtml" />
+    <Content Include="Views\Authentication\Login.cshtml" />
+    <Content Include="Views\Home\Download.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

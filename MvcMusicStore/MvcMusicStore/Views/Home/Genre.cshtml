@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MvcMusicStore.Models.Genre>
+
+@{
+    ViewBag.Title = "流派";
+}
+
+<div class="content">
+    <div class="content-genre">
+        <p class="content-title">流派</p>
+        <ul class="genre-list">
+             @foreach (var item in Model)
+             {
+                <li class="genre-card">
+                    @Html.ActionLink(@Html.DisplayFor(modelItem => item.GenreName).ToString(), "Index", "Genre", new { id = item.GenreID },new { @class= "genre-link" })
+                </li>
+             }
+            
+        </ul>
+    </div>
+
+</div>
+

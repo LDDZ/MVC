@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MvcMusicStore.Controllers
 {
@@ -17,24 +18,53 @@ namespace MvcMusicStore.Controllers
         {
             return View(db.Musics.ToList());
         }
-
-        public ActionResult About()
+        public ActionResult Play(int id)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-        public ActionResult Play(string MusicID)
-        {
-            Music Music = db.Musics.Find(MusicID);
+            Music Music = db.Musics.Find(id);
             return View(Music);
+        }
+        public ActionResult Genre()
+        {
+            return View(db.Genres.ToList());
+        }
+        [Authorize]
+        public ActionResult Download()
+        {
+            return View();
+        }
+        [NonAction]
+        public bool IsValidUser(UserDetails u)
+        {
+            
+            return db.UserDbset.Any(o => o.UserName == u.UserName && o.Password == u.Password);
+           
+        }
+        [HttpPost]
+        public ActionResult Login(UserDetails u)
+        {
+            if (IsValidUser(u))
+            {
+                FormsAuthentication.SetAuthCookie(u.UserName, false);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("CredentialError", "用户名密码无效");
+                return View("Login");
+            }
+        }
+
+        /// <summary>
+        /// 关闭数据库连接
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

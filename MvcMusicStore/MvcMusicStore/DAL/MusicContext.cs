@@ -18,9 +18,11 @@ namespace MvcMusicStore.DAL
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Music> Musics { get; set; }
         public DbSet<Info> Infos { get; set; }
+        public DbSet<UserDetails> UserDbset { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //不使用复数形式到表格命名
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
