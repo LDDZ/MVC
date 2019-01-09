@@ -1,4 +1,4 @@
-﻿@model ContosoUniversity.Models.User
+﻿@model ContosoUniversity.Models.UserDetails
 
 @{
     ViewBag.Title = "Login";
@@ -6,6 +6,7 @@
 
 <h2>Login</h2>
 <div>
+    @* 验证消息 *@
     @Html.ValidationMessage("CredentialError", new { style = "color:red;" })
     @using (Html.BeginForm("Login", "Authentication", FormMethod.Post))
             {

@@ -97,18 +97,13 @@ namespace ContosoUniversity.Migrations
             context.SaveChanges();
 
             //构建用户数据
-            var users = new List<User>
+            var users = new List<UserDetails>
             {
-            new User{UserID =1,UserName ="小李",Password ="1114"},
-            new User{UserID =2,UserName ="小赵",Password ="2224"},
-            new User{UserID =3,UserName ="小丽",Password ="3334"},
-            new User{UserID =4,UserName ="小刚",Password ="5154"},
-            new User{UserID =5,UserName ="小王",Password ="5154"},
-            new User{UserID =6,UserName ="小杨",Password ="5154"},
-            new User{UserID =7,UserName ="小吴",Password ="5154"}
+            new UserDetails{UserName ="小李",Password ="1114"},
+            new UserDetails{UserName ="小赵",Password ="2224"}
             };
             //将用户数据加入实体集
-            users.ForEach(s => context.Users.Add(s));
+            users.ForEach(s => context.UserDbset.Add(s));
             context.SaveChanges();
         }
     }

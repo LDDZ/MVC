@@ -18,29 +18,17 @@ namespace ContosoUniversity.Controllers
         }
 
         [NonAction]
-        public bool IsValidUser(User u)
+        public bool IsValidUser(UserDetails u)
         {
-            //using (var sc = new SchoolContext())
-            //{
-            //    var query = sc.Users.Where(e => e.UserName==u.UserName).Where(e=>e.Password==u.Password);
-            //    Console.WriteLine(query);
-            //    if (query.Count()== 0)
-            //        return false;
-            //    else
-            //        return true;
-            //}
-            if (u.UserName == "Admin" && u.Password == "Admin")
+            using (var sc = new SchoolContext())
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                return sc.UserDbset.Any(e => e.UserName == u.UserName && e.Password == u.Password);
+                
             }
         }
 
         [HttpPost]
-        public ActionResult Login(User u)
+        public ActionResult Login(UserDetails u)
         {
             if (IsValidUser(u))
             {

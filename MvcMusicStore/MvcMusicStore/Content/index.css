@@ -1,0 +1,10 @@
+.content{
+    margin: 20px auto;
+    width: 800px;
+    height: 800px;
+    border:1px #d3d3d3 solid;
+}
+.content-title{
+    font-size: 30px;
+    border-bottom: 3px #c10d0c solid;
+}

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MvcMusicStore.Models.Music>
+@{
+    ViewBag.Title = "音乐商店";
+}
+
+<div class="content">
+    <p class="content-title">歌曲</p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MusicName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MusicPath)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href="Home/Play/@item.MusicID">@Html.DisplayFor(modelItem => item.MusicName)</a>
+                    
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MusicPath)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MusicID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MusicID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MusicID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
