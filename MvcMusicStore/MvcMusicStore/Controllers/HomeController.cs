@@ -1,4 +1,5 @@
-﻿using MvcMusicStore.DAL;
+﻿using MvcMusicStore.ActionFilter;
+using MvcMusicStore.DAL;
 using MvcMusicStore.Models;
 using System;
 using System.Collections.Generic;
@@ -27,11 +28,13 @@ namespace MvcMusicStore.Controllers
         {
             return View(db.Genres.ToList());
         }
+        [AdminFilter] //绑定过滤器
         [Authorize]//验证
         public ActionResult Download()
         {
             return View();
         }
+       
 
         /// <summary>
         /// 关闭数据库连接

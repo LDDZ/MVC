@@ -2,7 +2,7 @@
     @{
         ViewBag.Title = "音乐商店";
     }
-@Html.ActionLink("添加音乐", "create","music")
+@Html.ActionLink("Create New", "Create","music")
     <div class="content">
         <div class="content-music">
             <p class="content-title">歌曲</p>
@@ -15,7 +15,10 @@
                             @Html.ActionLink(@Html.DisplayFor(modelItem => item.MusicName).ToString(), "play", new { id = item.MusicID })
                         </td>
                         <td>
-                            @Html.ActionLink("下载", "download" ) 
+                            @Html.ActionLink("下载", "download") |
+                            @Html.ActionLink("编辑", "Edit", "music", new { id = item.MusicID }, null) |
+                            @Html.ActionLink("详情", "Details", "music", new { id = item.MusicID }, null) |
+                            @Html.ActionLink("删除", "Delete", "music", new { id = item.MusicID }, null)
                         </td>
                     </tr>
                 }

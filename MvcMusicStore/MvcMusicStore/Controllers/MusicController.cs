@@ -53,7 +53,7 @@ namespace MvcMusicStore.Controllers
             {
                 db.Musics.Add(music);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "home");
             }
 
             return View(music);
@@ -85,7 +85,7 @@ namespace MvcMusicStore.Controllers
             {
                 db.Entry(music).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "home");
             }
             return View(music);
         }
@@ -113,7 +113,7 @@ namespace MvcMusicStore.Controllers
             Music music = db.Musics.Find(id);
             db.Musics.Remove(music);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "home");
         }
 
         protected override void Dispose(bool disposing)

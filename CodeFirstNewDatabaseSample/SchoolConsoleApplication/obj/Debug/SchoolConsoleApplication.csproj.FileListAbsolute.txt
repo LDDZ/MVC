@@ -18,3 +18,6 @@ H:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplicati
 H:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplication\obj\Debug\SchoolConsoleApplication.exe
 H:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplication\obj\Debug\SchoolConsoleApplication.pdb
 H:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplication\obj\Debug\SchoolConsoleApplication.csprojResolveAssemblyReference.cache
+F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplication\bin\Debug\SchoolConsoleApplication.exe.config
+F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplication\obj\Debug\SchoolConsoleApplication.exe
+F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\SchoolConsoleApplication\obj\Debug\SchoolConsoleApplication.pdb
