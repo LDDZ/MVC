@@ -5,9 +5,9 @@
 
 <h2>播放界面</h2>
 <h3>歌曲:@Model.MusicName</h3>
-<audio controls>
-    @*<source src="@Model.MusicPath" type="audio/mpeg">*@
-    <source src="@Model.MusicPath" type="audio/mpeg">
+<audio   controls>
+    @*controlsList="nodownload"*@
+    <source src="@Model.MusicPath"  type="audio/mpeg">
     您的浏览器不支持 audio 元素。
 </audio>
 

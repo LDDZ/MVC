@@ -61,10 +61,13 @@ namespace MvcMusicStore.DAL
 
             //构建用户数据
             var users = new List<UserDetails> {
-                new UserDetails { UserName="admin",Password="admin"},
-                new UserDetails { UserName="guest",Password="guest"}
+                new UserDetails { UserName="admin1",Password="admin",Status=UserStatus.AuthenticatedAdmin},
+                new UserDetails  { UserName="guest1",Password="guest",Status=UserStatus.AuthentucatedUser},
+                new UserDetails { UserName="admin2",Password="admin",Status=UserStatus.AuthenticatedAdmin},
+                new UserDetails  { UserName="guest2",Password="guest",Status=UserStatus.AuthentucatedUser}
             };
-            users.ForEach(u => context.UserDbset.Add(u));
+
+            users.ForEach(u => context.UserDbSet.Add(u));
             context.SaveChanges();
 
         }

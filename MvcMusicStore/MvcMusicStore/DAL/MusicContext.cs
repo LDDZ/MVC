@@ -18,7 +18,7 @@ namespace MvcMusicStore.DAL
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Music> Musics { get; set; }
         public DbSet<Info> Infos { get; set; }
-        public DbSet<UserDetails> UserDbset { get; set; }
+        public DbSet<UserDetails> UserDbSet { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

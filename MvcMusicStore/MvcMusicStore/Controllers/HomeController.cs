@@ -32,27 +32,6 @@ namespace MvcMusicStore.Controllers
         {
             return View();
         }
-        [NonAction]
-        public bool IsValidUser(UserDetails u)
-        {
-            
-            return db.UserDbset.Any(o => o.UserName == u.UserName && o.Password == u.Password);
-           
-        }
-        [HttpPost]
-        public ActionResult Login(UserDetails u)
-        {
-            if (IsValidUser(u))
-            {
-                FormsAuthentication.SetAuthCookie(u.UserName, false);
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                ModelState.AddModelError("CredentialError", "用户名密码无效");
-                return View("Login");
-            }
-        }
 
         /// <summary>
         /// 关闭数据库连接

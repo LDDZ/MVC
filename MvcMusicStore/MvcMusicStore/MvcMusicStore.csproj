@@ -169,6 +169,7 @@
     <Compile Include="Models\Info.cs" />
     <Compile Include="Models\Music.cs" />
     <Compile Include="Models\UserDetails.cs" />
+    <Compile Include="Models\UserStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
