@@ -27,7 +27,7 @@ namespace MvcMusicStore.Controllers
         {
             return View(db.Genres.ToList());
         }
-        [Authorize]
+        [Authorize]//验证
         public ActionResult Download()
         {
             return View();

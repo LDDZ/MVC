@@ -6,14 +6,17 @@
 
 <div class="content">
     <div class="content-music">
-        @*<p class="content-title">@Model.Genre.GenreName</p>*@
+        <p class="content-title">当前流派歌曲</p>
         <table class="table">
 
             @foreach (var item in Model)
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(@Html.DisplayFor(modelItem => item.MusicNmae).ToString(), "play", new { id = item.MusicID })
+                        @Html.ActionLink(@Html.DisplayFor(modelItem => item.MusicName).ToString(), "play","home", new { id = item.MusicID },null)
+                    </td>
+                    <td>
+                        @Html.ActionLink("下载", "download")
                     </td>
                 </tr>
             }

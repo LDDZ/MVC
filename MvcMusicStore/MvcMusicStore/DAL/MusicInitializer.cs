@@ -46,8 +46,14 @@ namespace MvcMusicStore.DAL
             {
                 new Info {InfoID=1, GenreID=1,MusicID=1},
                 new Info {InfoID=2, GenreID=2 ,MusicID=2},
-                new Info {InfoID=3, GenreID=3 ,MusicID=3},
-                new Info {InfoID=4, GenreID=4 ,MusicID=4}
+                new Info {InfoID=3, GenreID=2 ,MusicID=3},
+                new Info {InfoID=4, GenreID=4 ,MusicID=4},
+                new Info {InfoID=5, GenreID=5 ,MusicID=2},
+                new Info {InfoID=6, GenreID=1 ,MusicID=3},
+                new Info {InfoID=7, GenreID=4 ,MusicID=2},
+                new Info {InfoID=8, GenreID=3 ,MusicID=3},
+                new Info {InfoID=9, GenreID=3 ,MusicID=2},
+                new Info {InfoID=10, GenreID=8 ,MusicID=3},
             };
             //将信息数据加入实体集,并保存状态
             Infos.ForEach(s => context.Infos.Add(s));

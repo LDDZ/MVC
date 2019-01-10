@@ -57,3 +57,6 @@ D:/13林杰/MyWebProject/45MVC/CodeFirstNewDatabaseSample/CodeFirstNewDatabaseSa
 F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\CodeFirstNewDatabaseSample.exe.config
 F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.exe
 F:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.pdb
+D:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\bin\Debug\CodeFirstNewDatabaseSample.exe.config
+D:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.exe
+D:\13林杰\MyWebProject\45MVC\CodeFirstNewDatabaseSample\CodeFirstNewDatabaseSample\obj\Debug\CodeFirstNewDatabaseSample.pdb

@@ -4,3 +4,6 @@ D:\webSite\45MVC\LINQExercise\LINQExercise\bin\Debug\LINQExercise.pdb
 D:\webSite\45MVC\LINQExercise\LINQExercise\obj\Debug\LINQExercise.csprojResolveAssemblyReference.cache
 D:\webSite\45MVC\LINQExercise\LINQExercise\obj\Debug\LINQExercise.exe
 D:\webSite\45MVC\LINQExercise\LINQExercise\obj\Debug\LINQExercise.pdb
+D:\13林杰\MyWebProject\45MVC\LINQExercise\LINQExercise\bin\Debug\LINQExercise.exe.config
+D:\13林杰\MyWebProject\45MVC\LINQExercise\LINQExercise\obj\Debug\LINQExercise.exe
+D:\13林杰\MyWebProject\45MVC\LINQExercise\LINQExercise\obj\Debug\LINQExercise.pdb

@@ -1,4 +1,4 @@
-namespace ContosoUniversity.Migrations
+ï»¿namespace ContosoUniversity.Migrations
 {
     using ContosoUniversity.Models;
     using System;
@@ -29,47 +29,47 @@ namespace ContosoUniversity.Migrations
             //    );
             //
 
-            //¹¹½¨Ñ§ÉúÊı¾İ
+            //æ„å»ºå­¦ç”Ÿæ•°æ®
             var students = new List<Student> {
-                new Student {Name="Ò¶ÎÊ",EnrollmentDate=DateTime.Parse("2019-1-2")},
-                new Student {Name="ÂíÔÆ",EnrollmentDate=DateTime.Parse("2019-1-3")},
-                new Student {Name="ÎŞÃû1",EnrollmentDate=DateTime.Parse("2019-1-3")},
-                new Student {Name="ÎŞÃû2",EnrollmentDate=DateTime.Parse("2019-1-2")},
-                new Student {Name="ÎŞÃû",EnrollmentDate=DateTime.Parse("2019-1-1")},
-                new Student {Name="ÎŞÃû4",EnrollmentDate=DateTime.Parse("2019-1-2")},
-                new Student {Name="ÎŞÃû5",EnrollmentDate=DateTime.Parse("2019-1-3")}
+                new Student {Name="å¶é—®",EnrollmentDate=DateTime.Parse("2019-1-2")},
+                new Student {Name="é©¬äº‘",EnrollmentDate=DateTime.Parse("2019-1-3")},
+                new Student {Name="æ— å1",EnrollmentDate=DateTime.Parse("2019-1-3")},
+                new Student {Name="æ— å2",EnrollmentDate=DateTime.Parse("2019-1-2")},
+                new Student {Name="æ— å",EnrollmentDate=DateTime.Parse("2019-1-1")},
+                new Student {Name="æ— å4",EnrollmentDate=DateTime.Parse("2019-1-2")},
+                new Student {Name="æ— å5",EnrollmentDate=DateTime.Parse("2019-1-3")}
             };
             students.ForEach(s => context.Students.AddOrUpdate(p => p.Name, s));
             context.SaveChanges();
 
 
-            //¹¹½¨¿Î³ÌÊı¾İ
+            //æ„å»ºè¯¾ç¨‹æ•°æ®
             var courses = new List<Course>
             {
             new Course{CourseID=1050,Title="C#",Credits=3,},
-            new Course{CourseID=4022,Title="Web¿ª·¢",Credits=3,},
+            new Course{CourseID=4022,Title="Webå¼€å‘",Credits=3,},
             new Course{CourseID=4041,Title="Macroeconomics",Credits=3,},
             new Course{CourseID=1045,Title="Calculus",Credits=4,},
             new Course{CourseID=3141,Title="Trigonometry",Credits=4,},
             new Course{CourseID=2021,Title="Composition",Credits=3,},
             new Course{CourseID=2042,Title="Literature",Credits=4,}
             };
-            //½«¿Î³ÌÊı¾İ¼ÓÈë/¸üĞÂÊµÌå¼¯
+            //å°†è¯¾ç¨‹æ•°æ®åŠ å…¥/æ›´æ–°å®ä½“é›†
             courses.ForEach(s => context.Courses.AddOrUpdate(p => p.Title, s));
             context.SaveChanges();
 
 
-            //¹¹½¨×¢²áÊı¾İ
+            //æ„å»ºæ³¨å†Œæ•°æ®
             var enrollments = new List<Enrollment>
             {
                new Enrollment{
-                    StudentID =students.Single(s=>s.Name=="Ò¶ÎÊ").ID,
+                    StudentID =students.Single(s=>s.Name=="å¶é—®").ID,
                     CourseID =courses.Single(s=>s.Title=="C#").CourseID,
                     Grade =Grade.A
                 },
               new Enrollment{
-                    StudentID =students.Single(s=>s.Name=="Ò¶ÎÊ").ID,
-                    CourseID =courses.Single(s=>s.Title=="Web¿ª·¢").CourseID,
+                    StudentID =students.Single(s=>s.Name=="å¶é—®").ID,
+                    CourseID =courses.Single(s=>s.Title=="Webå¼€å‘").CourseID,
                     Grade =Grade.A
               },
             new Enrollment{StudentID=2,CourseID=1045,Grade=Grade.B},
@@ -83,7 +83,7 @@ namespace ContosoUniversity.Migrations
             new Enrollment{StudentID=7,CourseID=3141,Grade=Grade.A}
             };
 
-            //½«×¢²áÊı¾İ¼ÓÈë/¸üĞÂÊµÌå¼¯
+            //å°†æ³¨å†Œæ•°æ®åŠ å…¥/æ›´æ–°å®ä½“é›†
             enrollments.ForEach(s => context.Enrollments.Add(s));
             foreach (Enrollment e in enrollments)
             {
@@ -96,13 +96,13 @@ namespace ContosoUniversity.Migrations
             }
             context.SaveChanges();
 
-            //¹¹½¨ÓÃ»§Êı¾İ
+            //æ„å»ºç”¨æˆ·æ•°æ®
             var users = new List<UserDetails>
             {
-            new UserDetails{UserName ="Ğ¡Àî",Password ="1114"},
-            new UserDetails{UserName ="Ğ¡ÕÔ",Password ="2224"}
+            new UserDetails{UserName ="å°æ",Password ="1114",Status=},
+            new UserDetails{UserName ="å°èµµ",Password ="2224",Status=}
             };
-            //½«ÓÃ»§Êı¾İ¼ÓÈëÊµÌå¼¯
+            //å°†ç”¨æˆ·æ•°æ®åŠ å…¥å®ä½“é›†
             users.ForEach(s => context.UserDbset.Add(s));
             context.SaveChanges();
         }

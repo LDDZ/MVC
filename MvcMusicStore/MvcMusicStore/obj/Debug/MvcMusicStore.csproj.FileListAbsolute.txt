@@ -1,4 +1,3 @@
-D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
 D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\ApplicationInsights.config
 D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\roslyn\csc.exe
 D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -126,3 +125,4 @@ F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\zh-Hans\System.We
 F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
 F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
 F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
+D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache

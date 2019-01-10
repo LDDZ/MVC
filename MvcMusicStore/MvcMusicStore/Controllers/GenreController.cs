@@ -14,21 +14,12 @@ namespace MvcMusicStore.Controllers
         // GET: Genre
         public ActionResult Index(int id)
         {
-            Genre genre = db.Genres.Find(id);
-            var query = from b in db.Infos
-                        where b.GenreID.ToString().Contains(genre.GenreID.ToString())
-                        select b;
-            var info = query.ToList();
-            List<Music> musicList = null;
-            Music music = new Music();
-            foreach (var item in info)
+            Genre gener = db.Genres.Find(id);
+            List<Info> infoList = gener.Infos.ToList();
+            var musicList = new List<Music>();
+            foreach (var item in infoList)
             {
-                music.MusicID = item.MusicID;
-                music.MusicName = item.Music.MusicName;
-                music.MusicPath = item.Music.MusicPath;
-                music.Infos = (ICollection<Info>)item.Genre;
-                //item.Genre = music.Infos;
-                musicList.Add(music);
+                musicList.Add(item.Music);
             }
             return View(musicList);
         }

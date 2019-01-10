@@ -15,5 +15,6 @@ namespace MvcMusicStore.Models
 
         [Display(Name = "信息")]
         public virtual ICollection<Info> Infos { get; set; }
+        public virtual ICollection<Music> Musics { get; set; }
     }
 }

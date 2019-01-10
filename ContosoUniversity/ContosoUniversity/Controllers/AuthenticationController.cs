@@ -32,6 +32,7 @@ namespace ContosoUniversity.Controllers
         {
             if (IsValidUser(u))
             {
+                //设置cookie
                 FormsAuthentication.SetAuthCookie(u.UserName, false);
                 return RedirectToAction("Index", "Home");
             }

@@ -13,8 +13,9 @@ namespace MvcMusicStore.Models
         public string MusicName { get; set; }
         [Display(Name = "路径")]
         public string MusicPath { get; set; }
-        public string aaa { get; set; }
+        //public string aaa { get; set; }
         [Display(Name = "信息")]
         public virtual ICollection<Info> Infos { get; set; }
+
     }
 }
