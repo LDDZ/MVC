@@ -53,6 +53,7 @@ namespace MvcMusicStore.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }
+        
 
         //[NonAction]
         //public bool IsValidUser(UserDetails u)

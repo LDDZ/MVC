@@ -34,7 +34,17 @@ namespace MvcMusicStore.Controllers
         {
             return View();
         }
-       
+        //public ActionResult GetAddNewLink()
+        //{
+        //    if (Convert.ToBoolean(Session["IsAdmin"]))
+        //    {
+        //        return PartialView("AddNewLink");
+        //    }
+        //    else
+        //    {
+        //        return new EmptyResult();
+        //    }
+        //}
 
         /// <summary>
         /// 关闭数据库连接

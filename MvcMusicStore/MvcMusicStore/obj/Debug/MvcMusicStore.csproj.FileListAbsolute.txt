@@ -126,3 +126,7 @@ F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicSto
 F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
 F:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
 D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
+D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\PagedList.dll
+D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\PagedList.Mvc.dll
+D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\PagedList.xml
+D:\13林杰\MyWebProject\45MVC\MvcMusicStore\MvcMusicStore\bin\PagedList.Mvc.xml
