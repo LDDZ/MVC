@@ -99,8 +99,8 @@
             //构建用户数据
             var users = new List<UserDetails>
             {
-            new UserDetails{UserName ="小李",Password ="1114",Status=},
-            new UserDetails{UserName ="小赵",Password ="2224",Status=}
+            new UserDetails{UserName ="小李",Password ="1114",},
+            new UserDetails{UserName ="小赵",Password ="2224",}
             };
             //将用户数据加入实体集
             users.ForEach(s => context.UserDbset.Add(s));

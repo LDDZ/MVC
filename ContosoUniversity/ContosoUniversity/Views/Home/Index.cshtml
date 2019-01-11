@@ -1,31 +1,74 @@
-﻿@{
+﻿@using ContosoUniversity.Models;
+@model Weather
+@{
     ViewBag.Title = "Home Page";
 }
-
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PT0dsdNcxn2lhRfuc25nen4KGfsftASW"></script>
 <div class="jumbotron">
     <h1>2017软件技术2班</h1>
     <p class="lead">教程案例</p>
     <p><a href="https://docs.microsoft.com/zh-cn/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application" class="btn btn-primary btn-lg">去学习 &raquo;</a></p>
 </div>
+<h2>城市:@Model.City </h2>
+<h3>实时天气</h3>
+<ul>
+    <li>当前湿度:@Model.Humidity </li>
+</ul>
+<hr />
+<h3>今天天气 @Model.TodayWeather</h3>
+<ul>
+    <li>温度:@Model.Temperature</li>
+</ul>
+<hr /><hr /><hr />
+<h2 id="City"></h2>
+<h3>实时天气</h3>
+<ul>
+    <li id="Humidity">当前湿度</li>
+    <li id="Temp">当前温度</li>
+    <li id="Time">更新时间</li>
+</ul>
+<hr />
+<h3 id="TodayWeather">今天天气</h3>
+<ul>
+    <li id="Temperature">温度</li>
+    <li id="Date_y">日期</li>
+    <li id="Week">星期</li>
+</ul>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<div id="allmap"></div>
+
+<script type="text/javascript">
+	// 百度地图API功能
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+		    //拿到地址后获取城市天气
+		    var ajax = new XMLHttpRequest();
+		    ajax.open("POST", "../home/getWeather", true);
+		    ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		    //Console.log(r.address.city);
+		    ajax.send("city=" + r.address.city);
+		    ajax.responseType = "json";
+            //设置加载成功之后触发函数
+		    ajax.onload = function () {
+		        if (ajax.status === 200) {
+		             json = ajax.response;
+		            document.querySelector("#City").textContent = json.City;
+		            document.querySelector("#Humidity").textContent = json.Humidity;
+		            document.querySelector("#TodayWeather").textContent = json.TodayWeather;
+		            document.querySelector("#Temperature").textContent = json.Temperature;
+		            document.querySelector("#Date_y").textContent = json.Date_y;
+		            document.querySelector("#Week").textContent = json.Week;
+		            document.querySelector("#Temp").textContent = json.Temp;
+		            document.querySelector("#Time").textContent = json.Time;
+		            console.log(json);
+		        } else {
+		            console.log('网络请求products.json 失败，响应信息：' + request.status + ': ' + request.statusText);
+		        }
+		    }
+		}
+		else {
+		    Console.log("定位失败");
+		}
+	},{enableHighAccuracy: true})
+</script>
